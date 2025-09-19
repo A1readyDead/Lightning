@@ -20,6 +20,13 @@ int random = ((int)(Math.random()*19)) - 9;
     line(startX, startY, endX, endY);
       startX = endX;
       startY = endY;
+        if (endX >= 300){
+          background(90,40,100);
+          startX = 0;
+          startY = 150;
+          endX = 0;
+          endY = 150;
+}
 }
 void mousePressed()
 {
